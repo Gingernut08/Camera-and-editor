@@ -35,7 +35,6 @@ void deselectAll(){
     digitalWrite(SD_CS, HIGH);
 }
 
-// ACTIVATE CAMERA
 bool initiliseCamera(uint8_t index){
     Serial.print("Initialising camera ");
     Serial.println(index + 1)
@@ -197,4 +196,34 @@ void setup(){
             delay(1000);
         }
     }
+
+    Serial.println("SD card ready.");
+
+    for (uint8_t i = 0l i < Camera_COUNT; i++){
+        cameraReady[i] = initaliseCamera(i);
+    }
+
+    Serial.println();
+    Serial.println("Press Sjutter button to capture.");
+}
+
+void loop(){
+    static bool perviousButton = HIGH;
+
+    bool button = digitalRead(SHUTTER_BUTTON);
+
+    if (previousButton == HIGH && button == LOW){
+        delay(30);
+
+        if (digitalRead(SHUTTER_BUTTON) == low){
+            captureAll();
+
+            // Wait for button release
+            while (digitalRead(SHUTTER_BUTTON) == LOW){
+                delay(10);
+            }
+        }
+    }
+
+    previousButton = button;
 }
