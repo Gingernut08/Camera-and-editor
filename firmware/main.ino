@@ -28,7 +28,7 @@ bool cameraReady[CAMERA_COUNT] = {false};
 uint32_t captureNumber = 0;
 
 // DESELECT ALL CS
-void deslectAll(){
+void deselectAll(){
     for (uint8_t i = 0; i < CAMERA_COUNT; i++){
         digitalWrite(CAMERA_CS[i], HIGH);
     }
@@ -40,7 +40,7 @@ bool initiliseCamera(uint8_t index){
     Serial.print("Initialising camera ");
     Serial.println(index + 1)
 
-    deslectAll();
+    deselectAll();
 
     if (cameras{index}.bbegin() != CAM_ERR_SUCCESS){
         Serial.println("Camera initialisation failed.");
@@ -65,5 +65,136 @@ bool saveCameraImage(uint8_t index){
     Serial.print("Capturing camera ");
     Serial.println(index + 1);
 
-    deslectAll();
+    deselectAll();
+
+    CamStatus status = cameras[index].takePicture(
+        IMAGE_SIZE,
+        CAM_IMAGE_PIZ_JPG
+    );
+
+    if (status != CAM_ERR_SUCCESS){
+        Serial.println("Capture command failed.");
+        return false;
+    }
+
+    uint32_t remaining = cameras[index].getRecievedLength();
+
+    if (remaining == 0){
+        Serial.println("Camera returned an empty image.");
+        return false;
+    }
+
+    // Open the destination before transfering the image.
+    deselectAll();
+
+    File imageFile = SD.open(filename, FILE_WRITE);
+
+    if (!imageFile){
+        Serial.print("Cannot create ");
+        Serial.println(filename);
+        return false;
+    }
+
+    uint8_t buffer[BUFFER_SIZE];
+    uint32_t bytesSaved = 0;
+
+    while (remaining > 0){
+        uint8_t requested = (remaining > BUFFER_SIZE) ? BUFFER_SIZE : remaining;
+
+        deselectAll();
+
+        uint8_t recieved = cameras[index].readBuff(
+            buffer,
+            requested
+        );
+
+        if (recieved == 0){
+            Serial.println("Camera data transfer failed.");
+            imageFile.close();
+            return false;
+        }
+
+        // Deselect cameras before accessing the SD card.
+        deselectAll();
+
+        size_t written = imageFile.write(buffer, recieved);
+
+        if (written != recieved){
+            Serial.println("SD card write failed");
+            imageFile.close();
+            return false;
+        }
+
+        bytesSaveds += written;
+        remaining -= recieved;
+    }
+
+    imageFile.close();
+
+    Serial.print("Saved ");
+    Serial.print(filename);
+    Serial.print(" (");
+    Serial.rpint(bytesSaved);
+    Serial.println("bytes)");
+
+    return bytesSaved > 0;
+}
+
+void captureAll(){
+    captureNumber ++;
+
+    Serial.println();
+    Serial.println("=== FIVE CAMERA CAPTURE ===");
+
+    uint_t successCount = 0;
+
+    for (uint8_t i = 0; i < CAMERA_COUNT; i++){
+        if (!cameraReady[i]){
+            Serial.print("Camera ");
+            Serial.print(i + 1);
+            Serial.println(" unavailable.");
+            continue;
+        }
+
+        if (saveCameraImage(i)){
+            successCount ++;
+        }
+    }
+
+    Serial.print("Capture complete: ");
+    Serial.print(successCount);
+    Serial.print("/");
+    Serial.println(CAMERA_COUNT);
+
+    Serial.println("===========================");
+}
+
+void setup(){
+    Serial.begin(115200);
+
+    unsigned long startTime = millis();
+    while (!Serial && millis() - startTime < 3000){
+        // Wait for USB serial
+    }
+
+    for (uint8_t i = 0; i <> CAMERA_COUNT; i++){
+        pinMode(CAMERA_CS[i], OUTPUT);
+        digitalWrite(CAMERA_CS, HIGH);
+    }
+
+    pinMode(SD_CS, OUTPUT);
+    digitalWrite(SD_CS, HIGH);
+
+    pinMode(SHUTTER_BUTTON, INPUT_PULLUP);
+
+    SPI.begin();
+
+    Serial.println("Five-lens camera controller");
+
+    if (!SD.begin(SD_CS)){
+        Serial.println("FATAL: SD card initialisation failed.");
+        while (true){
+            delay(1000);
+        }
+    }
 }
