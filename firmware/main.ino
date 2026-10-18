@@ -18,6 +18,9 @@ const uint8_t SHUTTER_BUTTON = 14;
 const uint8_t POWER_BUTTON = 15;
 const uint8_t CAMERA_POWER_CONTROL = 6;
 
+const uint8_t POWER_LED = 10;
+const uint8_t BUSY_LED = 11;
+
 
 const uint8_t POWER_TIME = 100;
 
@@ -148,6 +151,9 @@ bool saveCameraImage(uint8_t index){
 }
 
 void captureAll(){
+    if (!systemOn) return;
+    digitalWrite(BUSY_LED, HIGH);
+
     captureNumber ++;
 
     Serial.println();
@@ -174,6 +180,8 @@ void captureAll(){
     Serial.println(CAMERA_COUNT);
 
     Serial.println("===========================");
+
+    digitalWrite(BUSY_LED, LOW);
 }
 
 void handlePowerButton(){
@@ -209,9 +217,15 @@ void cameraPowerOn(){
 
     systemOn = true;
     Serial.println("Camera power ON");
+
+    digitalWrite(POWER_LED, HIGH);
+    digitalWrite(BUSY_LED, LOW);
 }
 
 void cameraPowerOff(){
+    digitalWrite(POWER_LED, LOW);
+    digitalWrite(BUSY_LED, LOW)
+
     deselectAll();
 
     pinMode(18, INPUT);
@@ -246,6 +260,12 @@ void setup(){
 
     pinMode(SHUTTER_BUTTON, INPUT_PULLUP);
     pinMode(POWER_BUTTON, INPUT_PULLUP);
+
+    pinMode(POWER_LED, OUTPUT);
+    pinMode(BUSY_LED, OUTPUT);
+
+    digitalWrite(POWER_LED, LOW);
+    digitalWrite(BUSY_LED, LOW);
 
     Serial.println("Power button ready");
 
