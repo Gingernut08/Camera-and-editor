@@ -256,21 +256,18 @@ void setup(){
     }
 
     pinMode(SD_CS, OUTPUT);
-    digitalWrite(SD_CS, HIGH);
-
     pinMode(SHUTTER_BUTTON, INPUT_PULLUP);
     pinMode(POWER_BUTTON, INPUT_PULLUP);
-
     pinMode(POWER_LED, OUTPUT);
     pinMode(BUSY_LED, OUTPUT);
+    pinMode(CAMERA_POWER_CONTROL, OUTPUT);
 
+    digitalWrite(SD_CS, HIGH);
     digitalWrite(POWER_LED, LOW);
     digitalWrite(BUSY_LED, LOW);
+    digitalWrite(CAMERA_POWER_CONTROL, HIGH);
 
     Serial.println("Power button ready");
-
-    pinMode(CAMERA_POWER_CONTROL, OUTPUT);
-    digitalWrite(CAMERA_POWER_CONTROL, HIGH);
 
     delay(100);
     cameraPowerOn();
