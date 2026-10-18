@@ -11,15 +11,15 @@ const uint8_t CAMERA_COUNT = 5;
 const uint8_t BUFFER_SIZE = 255;
 
 // Pico GPIO
-const uint8_t CAMERA_CS[CAMERA_COUNT] = {0, 1, 2, 3, 4};
-const uint8_t SD_CS = 5;
+const uint8_t CAMERA_CS[CAMERA_COUNT] = {1, 2, 4, 5, 6};
+const uint8_t SD_CS = 7;
 
-const uint8_t SHUTTER_BUTTON = 14;
-const uint8_t POWER_BUTTON = 15;
-const uint8_t CAMERA_POWER_CONTROL = 6;
+const uint8_t SHUTTER_BUTTON = 20;
+const uint8_t POWER_BUTTON = 19;
+const uint8_t CAMERA_POWER_CONTROL = 9;
 
-const uint8_t POWER_LED = 10;
-const uint8_t BUSY_LED = 11;
+const uint8_t POWER_LED = 16;
+const uint8_t BUSY_LED = 17;
 
 
 const uint8_t POWER_TIME = 100;
