@@ -1,0 +1,2297 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ab6bbda0-06cc-487b-8e45-8c94b0d76ed9")
+	(paper "A4")
+	(lib_symbols
+		(symbol "SPI_CAM_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPI_CAM_1_0_1"
+				(rectangle
+					(start -8.89 5.08)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPI_CAM_1_1_1"
+				(pin input line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SPI_CAM_2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPI_CAM_2_0_1"
+				(rectangle
+					(start -8.89 5.08)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPI_CAM_2_1_1"
+				(pin input line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SPI_CAM_3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPI_CAM_3_0_1"
+				(rectangle
+					(start -8.89 5.08)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPI_CAM_3_1_1"
+				(pin input line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SPI_CAM_4"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPI_CAM_4_0_1"
+				(rectangle
+					(start -8.89 5.08)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPI_CAM_4_1_1"
+				(pin input line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "extra_componants:SPI_CAM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SPI_CAM_0_1"
+				(rectangle
+					(start -8.89 5.08)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPI_CAM_1_1"
+				(pin input line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 138.43 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36b60b93-26a6-4478-b583-7063c17fab51")
+	)
+	(junction
+		(at 139.7 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38aa3695-9efe-450a-91de-b8d1754ca3fa")
+	)
+	(junction
+		(at 137.16 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38bdeae0-732d-480d-a9cb-399ac721f850")
+	)
+	(junction
+		(at 137.16 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58aeccc7-d333-4327-b354-cd380bf5ac46")
+	)
+	(junction
+		(at 162.56 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58e6ff39-46f7-4bd4-a2f9-adfd247822ad")
+	)
+	(junction
+		(at 137.16 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d0867a3-7720-4b11-a83a-c0fdb6046d74")
+	)
+	(junction
+		(at 138.43 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69974d8f-6cd0-4b41-adcb-3f39aa6351f2")
+	)
+	(junction
+		(at 139.7 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8187e65e-583e-46ef-9701-4b2ad5934472")
+	)
+	(junction
+		(at 138.43 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825fd25b-e210-4db6-a21c-2180fb8c1ca5")
+	)
+	(junction
+		(at 163.83 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e625fb8-fc70-48a5-8b10-537921765251")
+	)
+	(junction
+		(at 138.43 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fe2db0c-f51f-4e59-ace7-ccd022e1bea3")
+	)
+	(junction
+		(at 163.83 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a99479f9-d21e-43cd-ac6f-173af7e1b899")
+	)
+	(junction
+		(at 137.16 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af2c61dc-2b9a-4a1b-a499-d674341882b8")
+	)
+	(junction
+		(at 162.56 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf5631a6-db59-4e25-bcfa-a3073248da5a")
+	)
+	(junction
+		(at 163.83 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6f9a7a4-b301-41ad-9468-dd84ba8b9b6a")
+	)
+	(junction
+		(at 162.56 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1c921a3-9610-47fb-b255-69117df6bd2f")
+	)
+	(junction
+		(at 139.7 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4d0a323-c9fe-4051-ad16-12c2d63262b4")
+	)
+	(junction
+		(at 139.7 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee4ba9b0-03af-45dc-bb00-e97dd4228bf5")
+	)
+	(junction
+		(at 162.56 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6d2bba3-6e79-4c8b-8fe6-0d5c8b1cda47")
+	)
+	(wire
+		(pts
+			(xy 161.29 86.36) (xy 163.83 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "005edd96-b929-44f2-be1e-a693a468ecfa")
+	)
+	(wire
+		(pts
+			(xy 140.97 118.11) (xy 137.16 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0356d098-c9e5-4f9c-9e23-07caf8856e8a")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 140.97 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e89e68-05ff-4808-b8a3-0305b7978056")
+	)
+	(wire
+		(pts
+			(xy 163.83 119.38) (xy 163.83 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063738a0-c06b-448d-87e9-a3fca33cd1f7")
+	)
+	(wire
+		(pts
+			(xy 137.16 101.6) (xy 140.97 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee8666c-716f-4635-818d-cbe3016ce9d9")
+	)
+	(wire
+		(pts
+			(xy 133.35 50.8) (xy 129.54 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f276bde-47fb-444c-892f-e40c2f7ea324")
+	)
+	(wire
+		(pts
+			(xy 134.62 104.14) (xy 134.62 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1602aa09-9ee3-4c4e-8871-994a460fc0a2")
+	)
+	(wire
+		(pts
+			(xy 139.7 38.1) (xy 139.7 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170a2588-b831-40fe-895c-0c683a469d1b")
+	)
+	(wire
+		(pts
+			(xy 138.43 99.06) (xy 138.43 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f02522c-5126-42a1-af29-802d755881ab")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 139.7 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f5c96df-c6f6-4d96-a2c7-ce70e1424ecc")
+	)
+	(wire
+		(pts
+			(xy 137.16 85.09) (xy 140.97 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24ae7aa4-bb44-4cfc-86fc-e894dfe502e4")
+	)
+	(wire
+		(pts
+			(xy 162.56 48.26) (xy 161.29 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2517f3df-0c5d-47b7-ba44-f6a21dac00a2")
+	)
+	(wire
+		(pts
+			(xy 135.89 54.61) (xy 140.97 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b183e69-377b-40d6-b8c3-979fb7953175")
+	)
+	(wire
+		(pts
+			(xy 162.56 97.79) (xy 162.56 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c5aec1c-f989-4715-bb59-5867e4740a66")
+	)
+	(wire
+		(pts
+			(xy 130.81 33.02) (xy 162.56 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cc4c536-3a9a-4151-8629-7509f551f3fb")
+	)
+	(wire
+		(pts
+			(xy 139.7 80.01) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f5d01dd-3f2c-4058-a868-67981dc140d1")
+	)
+	(wire
+		(pts
+			(xy 163.83 69.85) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3250eb76-bf07-462a-ae60-64b2bfe08171")
+	)
+	(wire
+		(pts
+			(xy 137.16 118.11) (xy 137.16 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3451f458-d5aa-4ad1-aabe-22e754655314")
+	)
+	(wire
+		(pts
+			(xy 138.43 82.55) (xy 140.97 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e39843-67f1-48be-b0a1-ab4883921434")
+	)
+	(wire
+		(pts
+			(xy 130.81 35.56) (xy 163.83 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ecfdefd-7411-4726-ae8f-38e493d259c0")
+	)
+	(wire
+		(pts
+			(xy 137.16 43.18) (xy 137.16 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "419427df-a7e1-4969-bb27-acddce847dcb")
+	)
+	(wire
+		(pts
+			(xy 138.43 49.53) (xy 138.43 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a7e9807-05b3-416e-8e75-168e763283d6")
+	)
+	(wire
+		(pts
+			(xy 162.56 64.77) (xy 162.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b3eb1a0-c5fd-4b43-94e1-e9b14c1bb89c")
+	)
+	(wire
+		(pts
+			(xy 163.83 86.36) (xy 163.83 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b763129-7abd-44d2-a725-95df38798b06")
+	)
+	(wire
+		(pts
+			(xy 138.43 99.06) (xy 140.97 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5166b5bb-65b7-48ed-acc9-9e4208d9ddb1")
+	)
+	(wire
+		(pts
+			(xy 139.7 46.99) (xy 140.97 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54069c60-2776-4ccf-8f21-a76fcf46fa0e")
+	)
+	(wire
+		(pts
+			(xy 138.43 66.04) (xy 140.97 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5675ad6d-b4a1-44a6-be99-76097fdb6714")
+	)
+	(wire
+		(pts
+			(xy 130.81 38.1) (xy 139.7 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d2fb29-4d2c-4372-8095-be830efcf3b3")
+	)
+	(wire
+		(pts
+			(xy 139.7 113.03) (xy 139.7 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcf67f9-ed6f-4c1f-8cf1-16654ba137f5")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 140.97 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c3b98e0-021e-4d9e-84eb-d2e8e80a15ea")
+	)
+	(wire
+		(pts
+			(xy 138.43 66.04) (xy 138.43 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f746f40-cfe1-46cc-9bb4-01fdcd95a9d9")
+	)
+	(wire
+		(pts
+			(xy 129.54 48.26) (xy 132.08 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72dadb8e-a792-46f0-a927-b76c00d92964")
+	)
+	(wire
+		(pts
+			(xy 162.56 33.02) (xy 162.56 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7372b234-8750-45c4-93e2-d0de19d51e8d")
+	)
+	(wire
+		(pts
+			(xy 129.54 45.72) (xy 135.89 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7671d5b3-53b2-4db5-b22e-cdebe8ef1252")
+	)
+	(wire
+		(pts
+			(xy 138.43 49.53) (xy 140.97 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2259bb-e1b3-4fe8-b4b3-bfcc505dace5")
+	)
+	(wire
+		(pts
+			(xy 132.08 71.12) (xy 140.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e457cb6-ccdb-4f55-8d0d-af7d478f99ef")
+	)
+	(wire
+		(pts
+			(xy 139.7 96.52) (xy 139.7 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "892e022c-3d64-48f7-9c94-9a13a51e4913")
+	)
+	(wire
+		(pts
+			(xy 137.16 101.6) (xy 137.16 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920a5166-d7b7-4fe2-9ff0-df3c96d90a63")
+	)
+	(wire
+		(pts
+			(xy 134.62 53.34) (xy 129.54 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9382795d-52a6-4152-87c2-aa4de902c221")
+	)
+	(wire
+		(pts
+			(xy 163.83 35.56) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "938d4ee2-aeca-45c2-87a5-1d7a088e204e")
+	)
+	(wire
+		(pts
+			(xy 138.43 40.64) (xy 138.43 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97760eca-1faf-4401-864f-93cdaa7da4dd")
+	)
+	(wire
+		(pts
+			(xy 132.08 48.26) (xy 132.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9871f8b6-74ad-4ff7-95d7-7f7e1731d9c5")
+	)
+	(wire
+		(pts
+			(xy 140.97 113.03) (xy 139.7 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c8a4d24-69a2-4537-891c-73526a0f0be1")
+	)
+	(wire
+		(pts
+			(xy 161.29 81.28) (xy 162.56 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0db6d37-4317-4979-ac5a-51c658767662")
+	)
+	(wire
+		(pts
+			(xy 161.29 119.38) (xy 163.83 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa5b7977-e492-45f7-9e44-9de178fb3424")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 137.16 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abccdb2a-5171-42b7-9e57-a76a714a00a4")
+	)
+	(wire
+		(pts
+			(xy 137.16 52.07) (xy 140.97 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acf80c6c-f438-4fc5-8954-d07e23ee6097")
+	)
+	(wire
+		(pts
+			(xy 161.29 114.3) (xy 162.56 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26d7b53-488b-4fda-ac97-59a7cca10b15")
+	)
+	(wire
+		(pts
+			(xy 163.83 53.34) (xy 161.29 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2c5770b-5687-467a-a5db-b2fe73de2306")
+	)
+	(wire
+		(pts
+			(xy 140.97 115.57) (xy 138.43 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6149d65-54fc-41e0-93ca-44cf8b1d7d0e")
+	)
+	(wire
+		(pts
+			(xy 135.89 55.88) (xy 135.89 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8efef91-64e8-469d-a54f-9a997b0d5363")
+	)
+	(wire
+		(pts
+			(xy 137.16 85.09) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfe1d9bd-4d56-4125-b96f-1b275d93c134")
+	)
+	(wire
+		(pts
+			(xy 140.97 104.14) (xy 134.62 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6036b58-9da0-4692-b49e-5a68ad1bc8ea")
+	)
+	(wire
+		(pts
+			(xy 133.35 87.63) (xy 133.35 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d073f6c9-de95-4aee-95d9-3da11153222f")
+	)
+	(wire
+		(pts
+			(xy 135.89 45.72) (xy 135.89 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d28cacd0-cc3b-443d-815f-55545ad96d85")
+	)
+	(wire
+		(pts
+			(xy 162.56 114.3) (xy 162.56 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d28fdebe-36fe-4226-accb-e68e32f0fae3")
+	)
+	(wire
+		(pts
+			(xy 130.81 43.18) (xy 137.16 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d58b235e-8d94-40ab-b8f0-c8404774072b")
+	)
+	(wire
+		(pts
+			(xy 162.56 81.28) (xy 162.56 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c874f0-c478-4e79-afba-ec42240ba2ff")
+	)
+	(wire
+		(pts
+			(xy 161.29 64.77) (xy 162.56 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8986c55-a9ec-4860-864d-7788d5811fcb")
+	)
+	(wire
+		(pts
+			(xy 130.81 40.64) (xy 138.43 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e25a2745-9890-4838-abe3-aee4849889f8")
+	)
+	(wire
+		(pts
+			(xy 139.7 96.52) (xy 140.97 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5468561-08e7-4836-962c-56723aa04937")
+	)
+	(wire
+		(pts
+			(xy 161.29 97.79) (xy 162.56 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9434f9d-c82c-49e6-8558-effead10ed98")
+	)
+	(wire
+		(pts
+			(xy 133.35 87.63) (xy 140.97 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec8980e4-0304-48f5-ba7a-8d9a997b0a66")
+	)
+	(wire
+		(pts
+			(xy 138.43 82.55) (xy 138.43 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb7cd58-6f0e-4fa1-8b08-75fa020eaf43")
+	)
+	(wire
+		(pts
+			(xy 161.29 69.85) (xy 163.83 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef36cf9f-e2e6-452c-9f40-44d1c395b50b")
+	)
+	(wire
+		(pts
+			(xy 129.54 55.88) (xy 135.89 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb0aeaf9-d203-442d-9a6e-bfba7c764856")
+	)
+	(wire
+		(pts
+			(xy 139.7 80.01) (xy 140.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed7a1bf-8533-4c8f-9d79-bb5586b71403")
+	)
+	(wire
+		(pts
+			(xy 135.89 120.65) (xy 140.97 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fedc91a2-c887-42c8-b3d3-2f6e4bf5d8b9")
+	)
+	(hierarchical_label "CS3"
+		(shape input)
+		(at 129.54 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "073bf5bb-1bf5-43d4-8689-765be5dd06ba")
+	)
+	(hierarchical_label "CS1"
+		(shape input)
+		(at 129.54 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "199f5a27-e18c-47b6-b297-7e2d9d3be40f")
+	)
+	(hierarchical_label "MOSI"
+		(shape input)
+		(at 130.81 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "30b5471f-52a1-45eb-b85a-521e17a04aba")
+	)
+	(hierarchical_label "CS2"
+		(shape input)
+		(at 129.54 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3fb8a240-5170-47a4-98eb-96ed0aa7f406")
+	)
+	(hierarchical_label "MISO"
+		(shape input)
+		(at 130.81 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55125b5d-76ae-4e24-b711-840a377a1f42")
+	)
+	(hierarchical_label "VCC"
+		(shape input)
+		(at 130.81 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "952d2d7d-b500-4e70-91bc-7000770a31ab")
+	)
+	(hierarchical_label "SCK"
+		(shape input)
+		(at 130.81 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bff1dd33-9ffb-4a5d-9420-509cf46746df")
+	)
+	(hierarchical_label "CS4"
+		(shape input)
+		(at 129.54 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c90eb331-150f-46a9-a270-f7e9719c17ae")
+	)
+	(hierarchical_label "CS5"
+		(shape input)
+		(at 129.54 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc12409a-9768-43ed-9c9e-94c8e03393ff")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 130.81 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf3db3fc-0a1b-4d7f-b4d1-7a25c8f31689")
+	)
+	(symbol
+		(lib_name "SPI_CAM_4")
+		(lib_id "extra_componants:SPI_CAM")
+		(at 152.4 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b8267c8-976a-4d58-a22c-b1624c11373a")
+		(property "Reference" "CM5"
+			(at 152.4 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 152.4 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "."
+			(uuid "061968e4-8d92-46f4-a0b8-2ed58bc836e9")
+		)
+		(pin "."
+			(uuid "3bd131b3-ca58-4f9b-8d1d-ca32afbb6bfa")
+		)
+		(pin "."
+			(uuid "649cc4b3-ed3b-4a60-89e2-a3014c5e216d")
+		)
+		(pin "."
+			(uuid "d9018f19-803e-4d9f-a4d8-6a9c42481eac")
+		)
+		(pin "."
+			(uuid "5983e5fe-14f0-43c8-a1f4-71c364361ae6")
+		)
+		(pin "."
+			(uuid "198348f9-85c2-4746-93ae-9982a1b9fac3")
+		)
+		(instances
+			(project "camera+editor"
+				(path "/da5668a4-e82e-431e-a481-da44e974c81f/7608e1fc-c1e0-4f81-b76d-a3ad30d268c7"
+					(reference "CM5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "SPI_CAM_2")
+		(lib_id "extra_componants:SPI_CAM")
+		(at 152.4 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "300239fc-5f44-467a-a1d9-3b3737c1d1a4")
+		(property "Reference" "CM3"
+			(at 152.4 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 152.4 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "."
+			(uuid "ed1d902b-a2e0-4e5b-a291-d63e4c219d70")
+		)
+		(pin "."
+			(uuid "9794f74c-717e-4ecb-a310-529f631f1290")
+		)
+		(pin "."
+			(uuid "269a459a-7450-46e9-b706-196fff44c6a8")
+		)
+		(pin "."
+			(uuid "97d8b011-f1a4-4d4a-913d-eb914d33e999")
+		)
+		(pin "."
+			(uuid "2b0f177b-7f58-4e03-a136-291084c848b7")
+		)
+		(pin "."
+			(uuid "7dc423f1-6f13-48f9-b1bc-15d05e881bd9")
+		)
+		(instances
+			(project "camera+editor"
+				(path "/da5668a4-e82e-431e-a481-da44e974c81f/7608e1fc-c1e0-4f81-b76d-a3ad30d268c7"
+					(reference "CM3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "SPI_CAM_3")
+		(lib_id "extra_componants:SPI_CAM")
+		(at 152.4 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "950f9585-3b3d-4c0f-ab5e-5e711c2c03cd")
+		(property "Reference" "CM4"
+			(at 152.4 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 152.4 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "."
+			(uuid "454a0255-cd2c-4673-974a-4828ef10d56d")
+		)
+		(pin "."
+			(uuid "23c0000b-6c79-4a2a-b107-1b53a2643774")
+		)
+		(pin "."
+			(uuid "2813970b-82ad-41d5-9080-0633c2d5af83")
+		)
+		(pin "."
+			(uuid "093e7b5e-689f-4ea2-b82c-d73e4043bacf")
+		)
+		(pin "."
+			(uuid "e5ac8457-05e7-4e6a-b4c0-3d3bafc66f2e")
+		)
+		(pin "."
+			(uuid "f5aed7b4-2d68-4c7a-b78b-d46e0286e15a")
+		)
+		(instances
+			(project "camera+editor"
+				(path "/da5668a4-e82e-431e-a481-da44e974c81f/7608e1fc-c1e0-4f81-b76d-a3ad30d268c7"
+					(reference "CM4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "extra_componants:SPI_CAM")
+		(at 152.4 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd90c0cf-2414-4747-9037-703db5b0762e")
+		(property "Reference" "CM1"
+			(at 152.4 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 152.4 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "."
+			(uuid "ee19be7f-be1c-4eac-bc0a-6f8b2c391b7e")
+		)
+		(pin "."
+			(uuid "232ec4e9-69cf-4517-b668-96acb2cae04b")
+		)
+		(pin "."
+			(uuid "b7167af5-bbde-42b2-b7e3-df49ebe7921b")
+		)
+		(pin "."
+			(uuid "2eae4ddc-ed4b-4b55-b693-620db4ccfa7a")
+		)
+		(pin "."
+			(uuid "1f7b5f0b-6464-4a83-9719-e53e96236a1f")
+		)
+		(pin "."
+			(uuid "1bce8849-15e6-4581-bb99-1f1a158d3bcf")
+		)
+		(instances
+			(project "camera+editor"
+				(path "/da5668a4-e82e-431e-a481-da44e974c81f/7608e1fc-c1e0-4f81-b76d-a3ad30d268c7"
+					(reference "CM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "SPI_CAM_1")
+		(lib_id "extra_componants:SPI_CAM")
+		(at 152.4 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd9c6e2c-8e0e-4d2b-88b4-e9b1f3619481")
+		(property "Reference" "CM2"
+			(at 152.4 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 152.4 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "."
+			(uuid "a8c3fbde-6b56-4e18-8dac-5c97cca3b62a")
+		)
+		(pin "."
+			(uuid "44b70989-cf57-4445-bdc1-171dab8ce482")
+		)
+		(pin "."
+			(uuid "034d67b2-3703-4c98-804d-aeaeda910d87")
+		)
+		(pin "."
+			(uuid "b87ca04d-5c07-499f-84aa-30e4fd550377")
+		)
+		(pin "."
+			(uuid "34a2705d-5598-4ecb-be3e-33e14b50ac9f")
+		)
+		(pin "."
+			(uuid "6777ab00-7da9-46fa-8054-53582e28cfc4")
+		)
+		(instances
+			(project "camera+editor"
+				(path "/da5668a4-e82e-431e-a481-da44e974c81f/7608e1fc-c1e0-4f81-b76d-a3ad30d268c7"
+					(reference "CM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
