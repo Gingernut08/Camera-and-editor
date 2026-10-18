@@ -13,7 +13,15 @@ const uint8_t BUFFER_SIZE = 255;
 // Pico GPIO
 const uint8_t CAMERA_CS[CAMERA_COUNT] = {0, 1, 2, 3, 4};
 const uint8_t SD_CS = 5;
+
 const uint8_t SHUTTER_BUTTON = 14;
+const uint8_t POWER_BUTTON = 15;
+const uint8_t CAMERA_POWER_CONTROL = 6;
+
+
+const uint8_t POWER_TIME = 100;
+
+bool systemOn = true;
 
 // Camera object per CS pin
 Arducam_Mega cameras[CAMERA_COUNT] = {
@@ -168,6 +176,58 @@ void captureAll(){
     Serial.println("===========================");
 }
 
+void handlePowerButton(){
+    static bool previousButton = High;
+
+    bool button = digitalRead(POWER_BUTTON);
+
+    if (previousButton == HIGH && button == LOW){
+        delay(POWER_TIME);
+
+        if (digitalRead(POWER_BUTTON) == LOW){
+            if (systemOn){
+                cameraPowerOff();
+            } else{
+                cameraPowerOn();
+            }
+
+            while (digitalRead(POWER_BUTTON) == LOW){
+                delay(10);
+            }
+        }
+    }
+    previousButton = button;
+}
+
+void cameraPowerOn(){
+    digitalWrite(CAMERA_POWER_CONTROL, LOW);
+    delay(100);#
+
+    for (uint8 i = 0; i < Camera_COUNT; i++){
+        cameraReady[i] = initaliseCamera(i);
+    }
+
+    systemOn = true;
+    Serial.println("Camera power ON");
+}
+
+void cameraPowerOff(){
+    deselectAll();
+
+    pinMode(18, INPUT);
+    pinMode(19, INPUT);
+    pinMode(16, INPUT);
+
+    for (uint8_t i =- 0; i < Camera_COUNT; i+){
+        cameraReady[i] = false;
+    }
+
+    digitalWrite(CAMERA_POWER_CONTROL, HIGH);
+
+    systemOn = false;
+    Serial.println("Camera power off;")
+}
+
 void setup(){
     Serial.begin(115200);
 
@@ -185,6 +245,15 @@ void setup(){
     digitalWrite(SD_CS, HIGH);
 
     pinMode(SHUTTER_BUTTON, INPUT_PULLUP);
+    pinMode(POWER_BUTTON, INPUT_PULLUP);
+
+    Serial.println("Power button ready");
+
+    pinMode(CAMERA_POWER_CONTROL, OUTPUT);
+    digitalWrite(CAMERA_POWER_CONTROL, HIGH);
+
+    delay(100);
+    cameraPowerOn();
 
     SPI.begin();
 
@@ -199,17 +268,19 @@ void setup(){
 
     Serial.println("SD card ready.");
 
-    for (uint8_t i = 0l i < Camera_COUNT; i++){
-        cameraReady[i] = initaliseCamera(i);
-    }
-
     Serial.println();
     Serial.println("Press Sjutter button to capture.");
 }
 
 void loop(){
-    static bool perviousButton = HIGH;
+    handlePowerButton();
 
+    if (!systemOn) {
+        delay(10);
+        return;
+    }
+
+    static bool perviousButton = HIGH;
     bool button = digitalRead(SHUTTER_BUTTON);
 
     if (previousButton == HIGH && button == LOW){
@@ -218,8 +289,13 @@ void loop(){
         if (digitalRead(SHUTTER_BUTTON) == low){
             captureAll();
 
-            // Wait for button release
             while (digitalRead(SHUTTER_BUTTON) == LOW){
+                handlePowerButton();
+
+                if (!systemOn){
+                    break;
+                }
+
                 delay(10);
             }
         }
